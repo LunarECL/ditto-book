@@ -4,7 +4,7 @@ import { Book } from "@/types/common";
 import { BookComponent } from "@/components/Book";
 import Title from "@/components/Title";
 
-export default function book() {
+function BookDetail() {
   const router = useRouter();
   const { id, display_name } = router.query;
 
@@ -99,3 +99,5 @@ export default function book() {
     </>
   );
 }
+
+export default BookDetail;
